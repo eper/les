@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>L.E.S. - Live Every Second</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
     <link href="./Content/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="./Content/css/styles.css" rel="stylesheet">
- 	<script src="http://code.jquery.com/jquery.js"></script>
+    <link href="./Content/css/styles.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery.js"></script>
     <script src="./Content/js/bootstrap.min.js"></script>
-  </head>
- <body>
- <div class="container">
-		<div class="row content"></div>
-		<div class="hero-unit">
-			<div class="row">
-				<div class="span5">
-					<img src="./Content/img/leslogo.png" width="400px;"/>
-				</div>
-			</div>
-			<div class="row">
-				<div class="span10">
-					<h2>L.E.S. is a movement to promote a healthier lifestyle through primary preventative actions.</h2>
-					<p class="lead">Our goal is to better educate the community about regular check-ups and personal well-being (proper diet and exercise).</p>
-					<p class="muted">Please check back again soon.</p>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-		<div class="row">
-			<div class="footer pull-right">
-			<iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/LES-Live-Every-Second/244451315698295" scrolling="no" frameborder="0" style="border:none; height:auto"></iframe>
-			</div>
-		</div>
-		</div>
-</div>
+    <br />
+    <script type="text/javascript" src="./Scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="./Scripts/jquery.fancybox.js?v=2.1.4"></script>
+    <script type="text/javascript" src="./Scripts/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Styles/jquery.fancybox.css?v=2.1.4" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./Scripts/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <script type="text/javascript" src="./Scripts/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row content"></div>
+        <div class="hero-unit">
+            <div class="row">
+                <div class="span6">
+                    <img src="./Content/img/leslogo.png" width="400px;" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="span10">
+                    <h2>L.E.S. is a movement to increase health awareness by fostering the importance of routine health check-ups.</h2>
+                    <p class="lead">Our goal is to better educate the community about the benefits of primary prevention and how it can lead a healthier lifestyle.</p>
+                    <p class="muted">Please check back again soon.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span5 pull-left">
+                <h3>Upcoming Events</h3>
+                <ul class="thumbnails">
+                    <li class="span5">
+                        <div class="thumbnail">
+                            <a class="fancybox" rel="flyers" href="./images/LES_Rodan Event Flyer.jpg">
+                                <img src="./images/LES_Rodan Event Flyer.jpg" alt=""></a>
+                            <h4>Kate's Birthday Bash</h4>
+                            <p>
+                                Thursday, May 16th, 2013<br />
+                                Rodan<br />
+                                1530 N. Milwaukee Ave. Chicago<br />
+                                8 pm. - 2 pm.<br />
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="span5 pull-right">
+                <div class="footer pull-right">
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/LES-Live-Every-Second/244451315698295" scrolling="no" frameborder="0" style="border: none; height: auto"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                wrapCSS: 'fancybox-custom',
+                closeClick: true,
+
+                openEffect: 'none',
+
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    },
+                    overlay: {
+                        css: {
+                            'background': 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
